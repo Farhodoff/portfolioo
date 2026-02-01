@@ -5,6 +5,7 @@ import GlassCard from "../components/ui/GlassCard";
 import LanguageSwitcher from "../components/ui/LanguageSwitcher";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import SEO from "../components/ui/SEO";
 
 export default function BlogPost() {
     const { id } = useParams();
@@ -47,6 +48,11 @@ export default function BlogPost() {
 
     return (
         <div className="container py-10 md:py-20 max-w-3xl">
+            <SEO
+                title={`${postContent.title} - Farhod Soyilov`}
+                description={postContent.excerpt}
+                type="article"
+            />
             <div className="flex items-center justify-between mb-8">
                 <Link
                     to="/blogs"

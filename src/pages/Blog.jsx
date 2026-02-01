@@ -4,6 +4,7 @@ import LanguageSwitcher from "../components/ui/LanguageSwitcher";
 import { Calendar, Clock, Eye } from "lucide-react";
 import { blogPosts } from "../data/blogPosts";
 import { useTranslation } from "react-i18next";
+import SEO from "../components/ui/SEO";
 
 export default function Blog() {
     const { t, i18n } = useTranslation();
@@ -11,6 +12,10 @@ export default function Blog() {
 
     return (
         <div className="container py-10 md:py-20 max-w-3xl">
+            <SEO
+                title="Blog - Farhod Soyilov"
+                description="Read my latest thoughts on software engineering, technology, and life."
+            />
             <div className="mb-12 flex items-end justify-between">
                 <div>
                     <h1 className="text-4xl font-bold mb-4">{t('blog.title')}</h1>

@@ -1,9 +1,14 @@
 import GlassCard from "../components/ui/GlassCard";
 import Button from "../components/ui/Button";
+import SEO from "../components/ui/SEO";
 
 export default function About() {
     return (
         <div className="container py-10 md:py-20 max-w-3xl">
+            <SEO
+                title="About Me - Farhod Soyilov"
+                description="Learn more about Farhod Soyilov, his experience, skills, and journey as a Software Engineer."
+            />
             {/* Header */}
             <div className="flex flex-col items-center mb-12 text-center">
                 <div className="h-24 w-24 rounded-full overflow-hidden border-2 border-background shadow-lg mb-6">

@@ -3,6 +3,7 @@ import Button from "../components/ui/Button";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
+import SEO from "../components/ui/SEO";
 
 export default function Contact() {
     const form = useRef();
@@ -47,6 +48,10 @@ export default function Contact() {
 
     return (
         <div className="container py-10 md:py-20 max-w-2xl">
+            <SEO
+                title="Contact Me - Farhod Soyilov"
+                description="Get in touch with Farhod Soyilov for collaborations, project inquiries, or just to say hi."
+            />
             <div className="mb-12 text-center">
                 <h1 className="text-4xl font-bold mb-4">Contact Me</h1>
                 <p className="text-muted-foreground text-lg">

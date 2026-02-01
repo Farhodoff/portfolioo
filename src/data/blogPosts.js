@@ -3,7 +3,7 @@ export const blogPosts = [
         id: 1,
         date: "Sep 24, 2024",
         readTime: "5",
-        views: "1.2k",
+        views: "31",//31
         tags: ["Fundamentals", "Web"],
         en: {
             title: "Understanding the Client-Server Model",
@@ -42,7 +42,7 @@ export const blogPosts = [
         id: 2,
         date: "Aug 15, 2024",
         readTime: "4",
-        views: "850",
+        views: "41",//41
         tags: ["React", "Frontend"],
         en: {
             title: "Why I Love React and Next.js",
@@ -75,7 +75,7 @@ export const blogPosts = [
         id: 3,
         date: "Jul 10, 2024",
         readTime: "6",
-        views: "2.1k",
+        views: "17",//17
         tags: ["CSS", "Design"],
         en: {
             title: "Mastering Tailwind CSS",
