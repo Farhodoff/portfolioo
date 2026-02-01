@@ -1,7 +1,7 @@
 export const blogPosts = [
     {
         id: 1,
-        date: "Sep 24, 2024",
+        date: "Jan 24, 2026",
         readTime: "5",
         views: "31",//31
         tags: ["Fundamentals", "Web"],
@@ -40,7 +40,7 @@ export const blogPosts = [
     },
     {
         id: 2,
-        date: "Aug 15, 2024",
+        date: "Jan 17, 2026",
         readTime: "4",
         views: "41",//41
         tags: ["React", "Frontend"],
@@ -73,7 +73,7 @@ export const blogPosts = [
     },
     {
         id: 3,
-        date: "Jul 10, 2024",
+        date: "Feb 1, 2026",
         readTime: "6",
         views: "17",//17
         tags: ["CSS", "Design"],
