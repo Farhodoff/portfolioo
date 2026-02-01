@@ -54,6 +54,11 @@ export default function Projects() {
                             <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                             <p className="text-muted-foreground text-sm mb-4 flex-grow">
                                 {project.description}
+                                {project.note && (
+                                    <span className="block mt-2 text-xs text-yellow-500/80 italic">
+                                        {project.note}
+                                    </span>
+                                )}
                             </p>
 
                             <div className="flex flex-wrap gap-2 mt-auto">

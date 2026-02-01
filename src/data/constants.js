@@ -2,8 +2,7 @@ import { Github, Linkedin, Youtube, Mail, Code, Terminal, BookOpen, Layers } fro
 
 export const SKILLS = [
     "React", "Next.js", "TypeScript", "Node.js", "Python",
-    "Django", "MongoDB", "PostgreSQL",
-    "Supabase", "Docker"
+    "Django", "MongoDB", "PostgreSQL"
 ];
 
 export const STATS = [
@@ -24,6 +23,7 @@ export const PROJECTS = [
     {
         title: "Maydon.uz",
         description: "An online booking platform for football fields and sports venues.",
+        note: "⚠️ Bu loyihaning ilk prototipi",
         tech: ["React", "Node.js", "MongoDB", "Redux"],
         github: "https://github.com/Farhodoff/maydonuz.uz",
         demo: "https://maydonuz.netlify.app/",
