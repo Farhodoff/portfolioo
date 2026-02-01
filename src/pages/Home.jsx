@@ -46,18 +46,21 @@ export default function Home() {
                 </div>
 
                 <div className="flex gap-4">
-                    {SOCIAL_LINKS.map((social) => (
-                        <a
-                            key={social.name}
-                            href={social.url}
-                            aria-label={social.name}
-                            target={social.url.startsWith("http") ? "_blank" : undefined}
-                            rel={social.url.startsWith("http") ? "noreferrer" : undefined}
-                            className={socialLinkClass}
-                        >
-                            <social.icon className="h-5 w-5 text-foreground" />
-                        </a>
-                    ))}
+                    {SOCIAL_LINKS.map((social) => {
+                        if (!social.url || !social.icon) return null;
+                        return (
+                            <a
+                                key={social.name}
+                                href={social.url}
+                                aria-label={social.name}
+                                target={social.url.startsWith("http") ? "_blank" : undefined}
+                                rel={social.url.startsWith("http") ? "noreferrer" : undefined}
+                                className={socialLinkClass}
+                            >
+                                <social.icon className="h-5 w-5 text-foreground" />
+                            </a>
+                        );
+                    })}
                 </div>
             </section>
 
