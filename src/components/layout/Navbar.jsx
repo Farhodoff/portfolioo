@@ -73,18 +73,21 @@ export default function Navbar() {
                             </button>
                             <div className={socialDropdownClass}>
                                 <div className="grid grid-cols-4 gap-2">
-                                    {SOCIAL_LINKS.map((social) => (
-                                        <a
-                                            key={social.name}
-                                            href={social.url}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            aria-label={social.name}
-                                            className={socialIconClass}
-                                        >
-                                            <social.icon className="h-4 w-4" />
-                                        </a>
-                                    ))}
+                                    {SOCIAL_LINKS.map((social) => {
+                                        if (!social.url || !social.icon) return null;
+                                        return (
+                                            <a
+                                                key={social.name}
+                                                href={social.url}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                aria-label={social.name}
+                                                className={socialIconClass}
+                                            >
+                                                <social.icon className="h-4 w-4" />
+                                            </a>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>

@@ -16,7 +16,7 @@ export const STATS = [
 export const SOCIAL_LINKS = [
     { name: "GitHub", url: "https://github.com/Farhodoff/", icon: Github },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/farhod-soyilov/", icon: Linkedin },
-    { name: "YouTube", url: "https://youtube.com", icon: Youtube },
+    { name: "YouTube", comment: "Coming soon..." },//url: "https://youtube.com", icon: Youtube },
     { name: "Email", url: "mailto:soyilovfarhod157@gmail.com", icon: Mail },
 ];
 
