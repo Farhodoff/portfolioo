@@ -2,7 +2,8 @@ import { Link, NavLink } from "react-router-dom";
 import { cn } from "../../lib/utils";
 import ThemeToggle from "../ui/ThemeToggle";
 import { useState, useEffect } from "react";
-import { Menu, X, MoreHorizontal, Github, Linkedin, Youtube, Mail } from "lucide-react";
+import { Menu, X, MoreHorizontal } from "lucide-react";
+import { SOCIAL_LINKS } from "../../data/constants";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -72,10 +73,18 @@ export default function Navbar() {
                             </button>
                             <div className={socialDropdownClass}>
                                 <div className="grid grid-cols-4 gap-2">
-                                    <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub" className={socialIconClass}><Github className="h-4 w-4" /></a>
-                                    <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" className={socialIconClass}><Linkedin className="h-4 w-4" /></a>
-                                    <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube" className={socialIconClass}><Youtube className="h-4 w-4" /></a>
-                                    <a href="mailto:soyilovfarhod157@gmail.com" aria-label="Email" className={socialIconClass}><Mail className="h-4 w-4" /></a>
+                                    {SOCIAL_LINKS.map((social) => (
+                                        <a
+                                            key={social.name}
+                                            href={social.url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            aria-label={social.name}
+                                            className={socialIconClass}
+                                        >
+                                            <social.icon className="h-4 w-4" />
+                                        </a>
+                                    ))}
                                 </div>
                             </div>
                         </div>
