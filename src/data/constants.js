@@ -23,7 +23,7 @@ export const PROJECTS = [
     {
         title: "Maydon.uz",
         description: "An online booking platform for football fields and sports venues.",
-        note: "⚠️ Bu loyihaning ilk prototipi",
+        note: "⚠️ This is the first prototype of the project I worked on.",
         tech: ["React", "Node.js", "MongoDB", "Redux"],
         github: "https://github.com/Farhodoff/maydonuz.uz",
         demo: "https://maydonuz.netlify.app/",
