@@ -2,8 +2,8 @@ import { Github, Linkedin, Youtube, Mail, Code, Terminal, BookOpen, Layers } fro
 
 export const SKILLS = [
     "React", "Next.js", "TypeScript", "Node.js", "Python",
-    "Django", "MongoDB", "PostgreSQL", "Firebase",
-    "Supabase", "AWS", "Docker", "Kubernetes"
+    "Django", "MongoDB", "PostgreSQL",
+    "Supabase", "Docker"]
 ];
 
 export const STATS = [
@@ -35,7 +35,7 @@ export const PROJECTS = [
         tech: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
         github: "https://github.com/Farhodoff/task_planner",
         demo: "https://task-planner-tau.vercel.app/",
-        image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=800&q=80"
+        image: "/images/task_planner.png"
     },
     {
         title: "UI Components Library",
@@ -43,7 +43,7 @@ export const PROJECTS = [
         tech: ["React", "Tailwind CSS", "Class Variance Authority"],
         github: "https://github.com/Farhodoff/components-main",
         demo: "https://components-main-nu.vercel.app/",
-        image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&q=80"
+        image: "/images/components_library.png"
     }
 ];
 
