@@ -22,7 +22,7 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
     {
-        title: "Maydonuz - Sport E-Commerce",
+        title: "Maydon.uz",
         description: "A comprehensive e-commerce platform for sport equipment booking and sales.",
         tech: ["React", "Node.js", "MongoDB", "Redux"],
         github: "https://github.com/Farhodoff/maydonuz.uz",
@@ -30,7 +30,7 @@ export const PROJECTS = [
         image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80"
     },
     {
-        title: "Task Planner App",
+        title: "Task Planner Web-App",
         description: "Real-time task collaboration tool with drag-and-drop interface and team features.",
         tech: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
         github: "https://github.com/Farhodoff/task_planner",
