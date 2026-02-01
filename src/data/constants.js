@@ -22,11 +22,11 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
     {
-        title: "E-Commerce Platform",
-        description: "A full-stack e-commerce solution with STRIPE integration, user authentication, and admin dashboard.",
+        title: "Maydonuz - Sport E-Commerce",
+        description: "A comprehensive e-commerce platform for sport equipment booking and sales.",
         tech: ["React", "Node.js", "MongoDB", "Redux"],
-        github: "https://github.com/Farhodoff",
-        demo: "https://github.com/Farhodoff",
+        github: "https://github.com/Farhodoff/maydonuz.uz",
+        demo: "https://maydonuz.netlify.app/",
         image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80"
     },
     {
@@ -42,7 +42,7 @@ export const PROJECTS = [
         description: "A collection of reusable, accessible, and modern React components built with Tailwind CSS.",
         tech: ["React", "Tailwind CSS", "Class Variance Authority"],
         github: "https://github.com/Farhodoff/components-main",
-        demo: "https://github.com/Farhodoff/components-main",
+        demo: "https://components-main-nu.vercel.app/",
         image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&q=80"
     }
 ];
