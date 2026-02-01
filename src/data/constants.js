@@ -27,7 +27,7 @@ export const PROJECTS = [
         tech: ["React", "Node.js", "MongoDB", "Redux"],
         github: "https://github.com/Farhodoff/maydonuz.uz",
         demo: "https://maydonuz.netlify.app/",
-        image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80"
+        image: "/images/maydonuz.png"
     },
     {
         title: "Task Planner Web-App",
