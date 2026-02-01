@@ -18,7 +18,7 @@ export const EXPERIENCE = [
         role: "Backend Developer",
         company: "Market Platform",
         period: "Sep 2025 – Dec 2025",
-        description: "Architected high-performance backend services using FastAPI. Designed RESTful APIs serving 5k+ requests/day. Developed a custom Admin Dashboard reducing manual operations by ~40% and engineered a Telegram Bot for real-time order processing."
+        description: "Architected high-performance backend services using FastAPI."
     },
     {
         role: "Frontend Developer (Self-Initiated)",
