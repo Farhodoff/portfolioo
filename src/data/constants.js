@@ -23,7 +23,7 @@ export const SOCIAL_LINKS = [
 export const PROJECTS = [
     {
         title: "Maydon.uz",
-        description: "A comprehensive e-commerce platform for sport equipment booking and sales.",
+        description: "An online booking platform for football fields and sports venues.",
         tech: ["React", "Node.js", "MongoDB", "Redux"],
         github: "https://github.com/Farhodoff/maydonuz.uz",
         demo: "https://maydonuz.netlify.app/",
