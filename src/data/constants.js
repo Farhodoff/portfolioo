@@ -30,16 +30,16 @@ export const PROJECTS = [
         image: "/images/maydonuz.png"
     },
     {
-        title: "Task Planner Web-App",
-        description: "Real-time task collaboration tool with drag-and-drop interface and team features.",
+        title: "AI Study Planner",
+        description: "AI-powered study/task planner with gamification, Pomodoro timer, and deep work focus tools.",
         tech: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
         github: "https://github.com/Farhodoff/task_planner",
         demo: "https://task-planner-tau.vercel.app/",
         image: "/images/task_planner.png"
     },
     {
-        title: "UI Components Library",
-        description: "A collection of reusable, accessible, and modern React components built with Tailwind CSS.",
+        title: "Super UI (Components)",
+        description: "Comprehensive React UI library with accessible, themeable components and documentation.",
         tech: ["React", "Tailwind CSS", "Class Variance Authority"],
         github: "https://github.com/Farhodoff/components-main",
         demo: "https://components-main-nu.vercel.app/",
