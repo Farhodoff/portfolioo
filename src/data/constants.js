@@ -67,7 +67,7 @@ export const FEATURES = [
         title: "YouTube Channel",
         icon: Youtube,
         description: "I share tutorials and tech reviews. Subscribe to stay updated.",
-        linkText: "Watch Videos",
-        linkHref: "https://youtube.com"
+        linkText: "Coming Soon...",
+        linkHref: "#"
     }
 ];
