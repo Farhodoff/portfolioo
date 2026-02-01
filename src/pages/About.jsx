@@ -42,13 +42,13 @@ export default function About() {
                     <div className="relative">
                         <div className="absolute -left-[21px] top-1 h-3 w-3 rounded-full bg-primary ring-4 ring-background"></div>
                         <h4 className="font-semibold text-foreground">Software Engineer</h4>
-                        <p className="text-sm text-muted-foreground mb-2">2023 - Present</p>
+                        <p className="text-sm text-muted-foreground mb-2">2025 - Present</p>
                         <p className="text-sm text-muted-foreground">Building awesome things.</p>
                     </div>
                     <div className="relative">
                         <div className="absolute -left-[21px] top-1 h-3 w-3 rounded-full bg-border ring-4 ring-background"></div>
                         <h4 className="font-semibold text-foreground">Junior Developer</h4>
-                        <p className="text-sm text-muted-foreground mb-2">2021 - 2023</p>
+                        <p className="text-sm text-muted-foreground mb-2">2024 - 2025</p>
                         <p className="text-sm text-muted-foreground">Learning and growing.</p>
                     </div>
                 </div>

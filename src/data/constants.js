@@ -14,8 +14,8 @@ export const STATS = [
 ];
 
 export const SOCIAL_LINKS = [
-    { name: "GitHub", url: "https://github.com", icon: Github },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: Linkedin },
+    { name: "GitHub", url: "https://github.com/Farhodoff/", icon: Github },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/farhod-soyilov/", icon: Linkedin },
     { name: "YouTube", url: "https://youtube.com", icon: Youtube },
     { name: "Email", url: "mailto:soyilovfarhod157@gmail.com", icon: Mail },
 ];
@@ -33,7 +33,7 @@ export const FEATURES = [
         icon: Github,
         description: "I love contributing to open source. Check out my GitHub profile.",
         linkText: "View GitHub",
-        linkHref: "https://github.com"
+        linkHref: "https://github.com/Farhodoff/"
     },
     {
         title: "YouTube Channel",
