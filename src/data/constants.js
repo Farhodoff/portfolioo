@@ -2,7 +2,8 @@ import { Github, Linkedin, Youtube, Mail, Code, Terminal, BookOpen, Layers } fro
 
 export const SKILLS = [
     "React", "Next.js", "TypeScript", "Node.js", "Python",
-    "Django", "MongoDB", "PostgreSQL"
+    "Django", "MongoDB", "PostgreSQL",
+    "Supabase", "Docker"
 ];
 
 export const STATS = [

@@ -5,6 +5,13 @@ import { cn } from "../../lib/utils";
 export default function ThemeToggle({ className }) {
     const [theme, setTheme] = useState("dark");
 
+    const applyTheme = (t) => {
+        const root = window.document.documentElement;
+        root.classList.remove("light", "dark");
+        root.classList.add(t);
+        localStorage.setItem("theme", t);
+    };
+
     useEffect(() => {
         // Check local storage or system preference
         const savedTheme = localStorage.getItem("theme");
@@ -15,12 +22,7 @@ export default function ThemeToggle({ className }) {
         applyTheme(initialTheme);
     }, []);
 
-    const applyTheme = (t) => {
-        const root = window.document.documentElement;
-        root.classList.remove("light", "dark");
-        root.classList.add(t);
-        localStorage.setItem("theme", t);
-    };
+
 
     const toggleTheme = () => {
         const newTheme = theme === "dark" ? "light" : "dark";
