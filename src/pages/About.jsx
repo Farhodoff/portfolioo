@@ -2,6 +2,8 @@ import GlassCard from "../components/ui/GlassCard";
 import Button from "../components/ui/Button";
 import SEO from "../components/ui/SEO";
 
+import { SKILLS, STATS, SOCIAL_LINKS, FEATURES, EXPERIENCE } from "../data/constants";
+
 export default function About() {
     return (
         <div className="container py-10 md:py-20 max-w-3xl">
@@ -37,20 +39,16 @@ export default function About() {
             </GlassCard>
 
             <GlassCard className="p-8">
-                <h3 className="text-xl font-bold mb-4">Experience</h3>
-                <div className="border-l-2 border-border pl-4 space-y-8">
-                    <div className="relative">
-                        <div className="absolute -left-[21px] top-1 h-3 w-3 rounded-full bg-primary ring-4 ring-background"></div>
-                        <h4 className="font-semibold text-foreground">Software Engineer</h4>
-                        <p className="text-sm text-muted-foreground mb-2">2025 - Present</p>
-                        <p className="text-sm text-muted-foreground">Building awesome things.</p>
-                    </div>
-                    <div className="relative">
-                        <div className="absolute -left-[21px] top-1 h-3 w-3 rounded-full bg-border ring-4 ring-background"></div>
-                        <h4 className="font-semibold text-foreground">Junior Developer</h4>
-                        <p className="text-sm text-muted-foreground mb-2">2024 - 2025</p>
-                        <p className="text-sm text-muted-foreground">Learning and growing.</p>
-                    </div>
+                <h3 className="text-xl font-bold mb-6">Experience</h3>
+                <div className="border-l-2 border-border pl-8 space-y-8 relative">
+                    {EXPERIENCE.map((job, index) => (
+                        <div key={index} className="relative">
+                            <div className="absolute -left-[39px] top-1 h-4 w-4 rounded-full bg-background border-2 border-primary ring-4 ring-background"></div>
+                            <h4 className="text-lg font-bold text-foreground">{job.role}</h4>
+                            <p className="text-primary font-medium text-sm mb-1">{job.company} • {job.period}</p>
+                            <p className="text-muted-foreground text-base leading-relaxed">{job.description}</p>
+                        </div>
+                    ))}
                 </div>
             </GlassCard>
         </div>

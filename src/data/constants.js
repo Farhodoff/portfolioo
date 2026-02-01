@@ -13,6 +13,21 @@ export const STATS = [
     // { label: "Technologies", value: "0", icon: Layers },
 ];
 
+export const EXPERIENCE = [
+    {
+        role: "Software Engineer",
+        company: "Tech Company",
+        period: "2025 - Present",
+        description: "Leading development of scalable web applications using React and Node.js. Improved system performance by 40%."
+    },
+    {
+        role: "Junior Developer",
+        company: "Startup Hub",
+        period: "2024 - 2025",
+        description: "Collaborated with senior developers to build client-facing features. Mastered modern JavaScript and UI/UX principles."
+    }
+];
+
 export const SOCIAL_LINKS = [
     { name: "GitHub", url: "https://github.com/Farhodoff/", icon: Github },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/farhod-soyilov/", icon: Linkedin },
