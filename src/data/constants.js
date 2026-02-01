@@ -30,20 +30,20 @@ export const PROJECTS = [
         image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80"
     },
     {
-        title: "Task Management App",
+        title: "Task Planner App",
         description: "Real-time task collaboration tool with drag-and-drop interface and team features.",
         tech: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
-        github: "https://github.com/Farhodoff",
-        demo: "https://github.com/Farhodoff",
+        github: "https://github.com/Farhodoff/task_planner",
+        demo: "https://task-planner-tau.vercel.app/",
         image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=800&q=80"
     },
     {
-        title: "AI Image Generator",
-        description: "SaaS application that generates images from text using OpenAI's DALL-E API.",
-        tech: ["React", "Express", "OpenAI API", "Stripe"],
-        github: "https://github.com/Farhodoff",
-        demo: "https://github.com/Farhodoff",
-        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80"
+        title: "UI Components Library",
+        description: "A collection of reusable, accessible, and modern React components built with Tailwind CSS.",
+        tech: ["React", "Tailwind CSS", "Class Variance Authority"],
+        github: "https://github.com/Farhodoff/components-main",
+        demo: "https://github.com/Farhodoff/components-main",
+        image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&q=80"
     }
 ];
 
