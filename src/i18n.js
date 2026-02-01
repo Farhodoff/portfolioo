@@ -7,11 +7,8 @@ i18n
     .use(initReactI18next)
     .init({
         debug: true,
+        lng: 'en', // FIXME: Hardcoded to stop auto-detection crash. Enable detection later when language switcher is ready.
         fallbackLng: 'en',
-        detection: {
-            order: ['localStorage', 'navigator'],
-            caches: ['localStorage'],
-        },
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
         },
