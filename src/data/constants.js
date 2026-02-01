@@ -15,16 +15,16 @@ export const STATS = [
 
 export const EXPERIENCE = [
     {
-        role: "Software Engineer",
-        company: "Tech Company",
-        period: "2025 - Present",
-        description: "Leading development of scalable web applications using React and Node.js. Improved system performance by 40%."
+        role: "Backend Developer",
+        company: "Market Platform",
+        period: "Sep 2025 – Dec 2025",
+        description: "Architected high-performance backend services using FastAPI. Designed RESTful APIs serving 5k+ requests/day. Developed a custom Admin Dashboard reducing manual operations by ~40% and engineered a Telegram Bot for real-time order processing."
     },
     {
-        role: "Junior Developer",
-        company: "Startup Hub",
-        period: "2024 - 2025",
-        description: "Collaborated with senior developers to build client-facing features. Mastered modern JavaScript and UI/UX principles."
+        role: "Frontend Developer (Self-Initiated)",
+        company: "Booking Platform (Maydon.uz)",
+        period: "Mar 2025 – Aug 2025",
+        description: "Developed a comprehensive booking system for sports venues in Tashkent. Built responsive UI with React and Redux, implementing secure user authentication and real-time slot availability."
     }
 ];
 
