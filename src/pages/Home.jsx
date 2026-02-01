@@ -18,8 +18,8 @@ export default function Home() {
                         <img
                             src="/profile.jpg"
                             alt="Profile"
-                            className="h-full w-full object-cover scale-125 -rotate-3"
-                            style={{ objectPosition: "50% 30%" }}
+                            className="h-full w-full object-cover scale-110"
+                            style={{ objectPosition: "center" }}
                         />
                     </div>
                     <div className="absolute bottom-1 right-1 h-4 w-4 rounded-full bg-emerald-500 border-2 border-background"></div>
