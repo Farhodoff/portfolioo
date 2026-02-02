@@ -4,30 +4,30 @@ import { cn } from "../../lib/utils";
 
 export default function ThemeToggle({ className }) {
     const [theme, setTheme] = useState("dark");
-
-    const applyTheme = (t) => {
-        const root = window.document.documentElement;
-        root.classList.remove("light", "dark");
-        root.classList.add(t);
-        localStorage.setItem("theme", t);
-    };
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
-        // Check local storage or system preference
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setMounted(true);
         const savedTheme = localStorage.getItem("theme");
         const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-        const initialTheme = savedTheme || systemTheme;
-
-        setTheme(initialTheme);
-        applyTheme(initialTheme);
+        if (savedTheme) {
+            setTheme(savedTheme);
+        } else {
+            setTheme(systemTheme);
+        }
     }, []);
 
-
+    useEffect(() => {
+        if (!mounted) return;
+        const root = window.document.documentElement;
+        root.classList.remove("light", "dark");
+        root.classList.add(theme);
+        localStorage.setItem("theme", theme);
+    }, [theme, mounted]);
 
     const toggleTheme = () => {
-        const newTheme = theme === "dark" ? "light" : "dark";
-        setTheme(newTheme);
-        applyTheme(newTheme);
+        setTheme((prev) => (prev === "dark" ? "light" : "dark"));
     };
 
     return (
@@ -39,11 +39,12 @@ export default function ThemeToggle({ className }) {
             )}
             aria-label="Toggle theme"
         >
-            {theme === "dark" ? (
+            {mounted && (theme === "dark" ? (
                 <Sun className="h-4 w-4 transition-all" />
             ) : (
                 <Moon className="h-4 w-4 transition-all" />
-            )}
+            ))}
+            {!mounted && <Sun className="h-4 w-4 transition-all" />}
         </button>
     );
 }
