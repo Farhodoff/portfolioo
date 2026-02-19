@@ -17,13 +17,13 @@ export const EXPERIENCE = [
     {
         role: "Backend Developer",
         company: "Market Platform",
-        period: "Sep 2025 – Dec 2025",
+        period: "Jun 2025 – Jan 2026",
         description: "Architected high-performance backend services using FastAPI."
     },
     {
         role: "Frontend Developer (Self-Initiated)",
         company: "Booking Platform (Maydon.uz)",
-        period: "Mar 2025 – Aug 2025",
+        period: "Jan 2025 – May 2025",
         description: "Developed a comprehensive booking system for sports venues in Tashkent. Built responsive UI with React and Redux, implementing secure user authentication and real-time slot availability."
     }
 ];
