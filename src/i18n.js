@@ -18,7 +18,6 @@ i18n
                         subtitle: "Sharing my thoughts on software engineering, productivity, and life.",
                         back: "Back to blogs",
                         readTime: "min read",
-                        views: "views",
                         share: "Share Article",
                         thanks: "Thanks for reading!"
                     }
@@ -31,7 +30,6 @@ i18n
                         subtitle: "Dasturiy injiniring, unumdorlik va hayot haqida o'z fikrlarimni ulashaman.",
                         back: "Bloglarga qaytish",
                         readTime: "daqiqa o'qish",
-                        views: "ko'rishlar",
                         share: "Maqolani ulashish",
                         thanks: "O'qiganingiz uchun rahmat!"
                     }
