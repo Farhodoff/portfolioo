@@ -3,7 +3,7 @@ export const blogPosts = [
         id: 1,
         date: "Jan 24, 2026",
         readTime: "5",
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800",
+        image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800",
         tags: ["Fundamentals", "Web"],
         en: {
             title: "Understanding the Client-Server Model",
@@ -108,7 +108,7 @@ export const blogPosts = [
         id: 4,
         date: "Feb 3, 2026",
         readTime: "3",
-        image: "https://images.unsplash.com/photo-1593720213428-28a5b9ed9461?auto=format&fit=crop&q=80&w=800",
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
         tags: ["React", "JSX"],
         en: {
             title: "Understanding React Element Tags",
