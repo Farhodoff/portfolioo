@@ -6,6 +6,7 @@ import LanguageSwitcher from "../components/ui/LanguageSwitcher";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import SEO from "../components/ui/SEO";
+import { motion } from "framer-motion";
 
 export default function BlogPost() {
     const { id } = useParams();
@@ -46,14 +47,39 @@ export default function BlogPost() {
         }
     };
 
+    const pageVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.12,
+                delayChildren: 0.1
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5, ease: "easeOut" }
+        }
+    };
+
     return (
-        <div className="container py-10 md:py-20 max-w-4xl">
+        <motion.div 
+            variants={pageVariants}
+            initial="hidden"
+            animate="visible"
+            className="container py-10 md:py-20 max-w-4xl overflow-x-hidden"
+        >
             <SEO
                 title={`${postContent.title} - Farhod Soyilov`}
                 description={postContent.excerpt}
                 type="article"
             />
-            <div className="flex items-center justify-between mb-8">
+            <motion.div variants={itemVariants} className="flex items-center justify-between mb-8">
                 <Link
                     to="/blogs"
                     className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
@@ -62,10 +88,10 @@ export default function BlogPost() {
                     {t('blog.back')}
                 </Link>
                 <LanguageSwitcher />
-            </div>
+            </motion.div>
 
             <article>
-                <header className="mb-10">
+                <motion.header variants={itemVariants} className="mb-10">
                     <div className="relative h-64 md:h-96 w-full rounded-2xl overflow-hidden mb-8 shadow-xl">
                         <img
                             src={post.image}
@@ -95,9 +121,9 @@ export default function BlogPost() {
                             <Clock className="h-4 w-4" /> {post.readTime} {t('blog.readTime')}
                         </span>
                     </div>
-                </header>
+                </motion.header>
 
-                <div className="max-w-3xl mx-auto">
+                <motion.div variants={itemVariants} className="max-w-3xl mx-auto">
                     <GlassCard className="prose prose-invert max-w-none p-8 md:p-12 leading-relaxed text-foreground/90">
                         <div dangerouslySetInnerHTML={{ __html: postContent.content }} />
                     </GlassCard>
@@ -114,8 +140,8 @@ export default function BlogPost() {
                             {copied ? "Copied!" : t('blog.share')}
                         </button>
                     </div>
-                </div>
+                </motion.div>
             </article>
-        </div>
+        </motion.div>
     );
 }
