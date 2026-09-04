@@ -92,13 +92,13 @@ export default function BlogPost() {
 
             <article>
                 <motion.header variants={itemVariants} className="mb-10">
-                    <div className="relative h-64 md:h-96 w-full rounded-2xl overflow-hidden mb-8 shadow-xl">
+                    <div className="relative h-64 md:h-96 w-full rounded-2xl overflow-hidden mb-8 shadow-2xl border border-border/60">
                         <img
                             src={post.image}
                             alt={postContent.title}
                             className="w-full h-full object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
                         <div className="absolute bottom-6 left-6 right-6">
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {post.tags.map(tag => (

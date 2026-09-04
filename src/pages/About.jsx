@@ -2,6 +2,7 @@ import GlassCard from "../components/ui/GlassCard";
 import Button from "../components/ui/Button";
 import SEO from "../components/ui/SEO";
 import { motion } from "framer-motion";
+import { FileText, Download } from "lucide-react";
 
 import { SKILLS, STATS, SOCIAL_LINKS, FEATURES, EXPERIENCE } from "../data/constants";
 
@@ -60,6 +61,20 @@ export default function About() {
                 <p className="text-muted-foreground text-lg">
                     I'm a passionate Software Engineer based in Uzbekistan.
                 </p>
+                <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
+                    <Button href="/cv" size="md" className="gap-2">
+                        <FileText className="w-4 h-4" /> View Full CV
+                    </Button>
+                    <Button 
+                        href="/Farhod_Soyilov_CV.pdf" 
+                        download="Farhod_Soyilov_CV.pdf" 
+                        variant="outline" 
+                        size="md" 
+                        className="gap-2"
+                    >
+                        <Download className="w-4 h-4" /> Download PDF
+                    </Button>
+                </div>
             </motion.div>
 
             <motion.div variants={itemVariants}>

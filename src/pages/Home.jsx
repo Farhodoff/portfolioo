@@ -1,7 +1,7 @@
 import Button from "../components/ui/Button";
 import GlassCard from "../components/ui/GlassCard";
 import SkillTag from "../components/ui/SkillTag";
-import { Github, Linkedin, Youtube, Mail } from "lucide-react";
+import { Github, Linkedin, Youtube, Mail, FileText } from "lucide-react";
 import { SKILLS, STATS, SOCIAL_LINKS, FEATURES } from "../data/constants";
 import SEO from "../components/ui/SEO";
 import { motion } from "framer-motion";
@@ -101,10 +101,14 @@ export default function Home() {
 
                 <motion.div 
                     variants={itemVariants}
-                    className="flex gap-4 mb-10"
+                    className="flex flex-wrap justify-center gap-4 mb-10"
                 >
                     <Button href="/contact" size="lg">Contact Me</Button>
-                    <Button href="/about" variant="secondary" size="lg">About Me</Button>
+                    <Button href="/cv" variant="secondary" size="lg" className="gap-2">
+                        <FileText className="h-4 w-4" />
+                        <span>View CV</span>
+                    </Button>
+                    <Button href="/about" variant="outline" size="lg">About Me</Button>
                 </motion.div>
 
                 <motion.div 

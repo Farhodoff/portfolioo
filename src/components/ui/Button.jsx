@@ -32,6 +32,21 @@ export default function Button({
     );
 
     if (href) {
+        const isDownloadOrExternal =
+            Boolean(props.download) ||
+            href.startsWith("http://") ||
+            href.startsWith("https://") ||
+            href.startsWith("mailto:") ||
+            href.endsWith(".pdf");
+
+        if (isDownloadOrExternal) {
+            return (
+                <a href={href} className={styles} {...props}>
+                    {children}
+                </a>
+            );
+        }
+
         return (
             <Link to={href} className={styles} {...props}>
                 {children}
