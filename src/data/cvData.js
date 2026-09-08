@@ -74,10 +74,10 @@ export const CV_DATA = {
   },
   projects: [
     {
-      title: "Task Planner",
-      description: "AI-powered student planning app with gamification and real-time collaboration.",
-      tech: ["FastAPI", "PostgreSQL", "React", "WebSockets", "OpenAI API"],
-      github: "https://github.com/Farhodoff/task_planner"
+      title: "Nihongo Talk",
+      description: "AI-powered Japanese learning and mastery platform (JLPT N5–N1) featuring real-time AI voice coaching, Anki SM-2 spaced repetition, and kanji stroke canvas.",
+      tech: ["React", "TypeScript", "Tailwind CSS", "Supabase", "DeepSeek AI", "WebRTC"],
+      github: "https://github.com/Farhodoff/nihongo-talk"
     },
     {
       title: "Components-main",

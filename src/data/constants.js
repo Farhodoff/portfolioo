@@ -46,10 +46,10 @@ export const PROJECTS = [
         image: "/images/maydonuz.png"
     },
     {
-        title: "AI Study Planner",
-        description: "AI-powered study/task planner with gamification, Pomodoro timer, and deep work focus tools.",
-        tech: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
-        github: "https://github.com/Farhodoff/task_planner",
+        title: "Nihongo Talk",
+        description: "AI-powered Japanese learning and mastery platform (JLPT N5–N1) with real-time AI voice coaching, Anki SM-2 flashcards, and kanji canvas.",
+        tech: ["React", "TypeScript", "Tailwind CSS", "Supabase", "DeepSeek AI"],
+        github: "https://github.com/Farhodoff/nihongo-talk",
         demo: "https://task-planner-tau.vercel.app/",
         image: "/images/task_planner.png"
     },
