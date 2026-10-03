@@ -44,22 +44,6 @@ export default function Blog() {
     const featuredPost = isDefaultView && sortedPosts.length > 0 ? sortedPosts[0] : null;
     const remainingPosts = isDefaultView ? sortedPosts.slice(1) : filteredPosts;
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.08, delayChildren: 0.1 }
-        }
-    };
-
-    const cardVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.4, ease: "easeOut" }
-        }
-    };
 
     return (
         <div className="container py-10 md:py-20 max-w-5xl overflow-x-hidden">
